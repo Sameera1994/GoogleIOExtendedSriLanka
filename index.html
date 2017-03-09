@@ -276,6 +276,11 @@
                 $(".mdl-layout__content").animate({scrollTop:position}, speed, "swing");
                 return false;
             });
+
+            $('#contact-button').click(function(){
+                console.log('top');
+                $('main').animate({ scrollTop: 0 }, "slow");
+            })
         });
     </script>
     <!--<script src="scripts/scroll.js"></script>-->
