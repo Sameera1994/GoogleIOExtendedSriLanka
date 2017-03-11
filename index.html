@@ -592,6 +592,12 @@
             video = '<center><iframe src="'+ $(this).attr('data-video') +'" style="width:80%;height:450px; margin-top:50px;"></iframe></center>';
             $(this).replaceWith(video);
         });
+
+        $('.mdl-navigation__link').click(function(){
+            $('.mdl-layout__drawer').toggleClass('is-visible');
+            $('.mdl-layout__obfuscator').toggleClass('is-visible');
+            console.log('Visible');
+        });
     </script>
     <script src="scripts/TweenMax.js"></script>
     <script src="scripts/slash.js"></script>
