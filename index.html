@@ -154,8 +154,8 @@
                     </div>
                 </div>
 
-                <section class="section--center mdl-grid site-max-width homepage-portfolio" style="margin-top:30px;">
-                    <div class="linkboxes ">
+                <section class="section--center mdl-grid site-max-width homepage-portfolio" style="margin-top:30px;margin-bottom:-50px;">
+                    <div class="linkboxes" style="padding:0 !important;">
                         <div class="linkboxes__content">
                             <div class="linkboxes__title">
                                 Explore themes
@@ -246,14 +246,14 @@
                     </div>
                 </section>
 
-                <section class="section--center mdl-grid site-max-width" style="margin-top:-150px;">
-                    <div>
-                        <img src="img/sundar_key.jpg" />
-                    </div>
-                </section>
+                <div style="margin-top:30px; margin-bottom:60px;">
+                    <center>
+                        <img id="imgPlay" src="img/sundar_key.jpg" style="height:560px;" data-video="https://www.youtube.com/embed/E_heSNIn8ik?autoplay=1"/>
+                    </center>
+                </div>
                 <hr style="margin-top:0; z-index:2000; position: relative;"/>
 
-                <section id="ioshedule" class="section--center mdl-grid site-max-width homepage-portfolio" style="margin-top:0px;">
+                <section id="ioshedule" class="section--center mdl-grid site-max-width homepage-portfolio" style="margin-top:0; z-index:4000; position: relative;">
                     <div class="linkboxes ">
                         <div class="linkboxes__content">
                             <div class="linkboxes__title">
@@ -564,6 +564,11 @@
                 console.log('top');
                 $('main').animate({ scrollTop: 0 }, "slow");
             })
+        });
+
+        $('#imgPlay').click(function(){
+            video = '<center><iframe src="'+ $(this).attr('data-video') +'" style="width:80%;height:450px; margin-top:50px;"></iframe></center>';
+            $(this).replaceWith(video);
         });
     </script>
     <script src="scripts/TweenMax.js"></script>
