@@ -49,8 +49,8 @@
     <div class="mdl-layout__drawer">
         <span style="transform:translateX(-61px)" class="mdl-layout-title mdl-color-text--grey-900"></span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link mdl-color-text--grey-900" href="#about">About I/O</a>
-            <a class="mdl-navigation__link mdl-color-text--grey-900" href="#ioshedule">Schedule</a>
+            <a class="mdl-navigation__link mdl-color-text--grey-900 drawer" href="#about">About I/O</a>
+            <a class="mdl-navigation__link mdl-color-text--grey-900 drawer" href="#ioshedule">Schedule</a>
             <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--colored"
                target="_blank" href="http://rsvp.lk/gdgsrilanka/google-io-2017-sri-lanka">Register Now</a>
         </nav>
@@ -593,7 +593,7 @@
             $(this).replaceWith(video);
         });
 
-        $('.mdl-navigation__link').click(function(){
+        $('.mdl-navigation__link.drawer').click(function(){
             $('.mdl-layout__drawer').toggleClass('is-visible');
             $('.mdl-layout__obfuscator').toggleClass('is-visible');
             console.log('Visible');
