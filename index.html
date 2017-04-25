@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6284F3">
     <title>Google I/O Extended 17</title>
     <link rel="icon" href="img/favicon/favicon.ico">
     <meta name="description" content="Demo of Material design portfolio template by TemplateFlip.com."/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;amp;lang=en"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" rel="stylesheet">
+    <link href="https://code.getmdl.io/1.3.0/material.pink-purple.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
+
 </head>
-<body id="top">
+<body id="top" data-bookmark-api="io2015-data.appspot.com/_ah/api/discovery/v1/apis/userdata/v1/rest">
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <a href="#" id="contact-button"
        class="mdl-button mdl-button--fab mdl-js-button button-color mdl-button--raised mdl-js-ripple-effect mdl-color-text--accent-contrast mdl-shadow--4dp">
@@ -24,6 +26,7 @@
     <header class="mdl-layout__header mdl-color--grey-50">
         <div class="mdl-layout__header-row" style="color:#000;">
             <!-- Title -->
+            <a href="index.html">
             <svg style="transform: translateY(-1px) translateX(-19px) scale(0.345); margin-left:-50px;" width="188" height="133"
                  viewBox="0 0 188 133" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fill-rule="evenodd">
@@ -32,16 +35,17 @@
                     <path d="M136.648 14c-28.3 0-51.242 22.745-51.242 50.8 0 28.057 22.942 50.8 51.242 50.8 28.301 0 51.242-22.743 51.242-50.8 0-28.055-22.94-50.8-51.242-50.8"
                           fill="#5471F9"></path>
                 </g>
-            </svg>
-            <span style="transform:translateX(-61px)" class="mdl-layout-title mdl-color-text--grey-900" id="titleTop">Google I/O Extended 2017 </span>
+            </svg></a>
+            <span style="transform:translateX(-61px)" class="mdl-layout-title mdl-color-text--grey-900" id="titleTop">Google I/O Extended 17 </span>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
                 <a class="mdl-navigation__link mdl-color-text--grey-900" href="#about">About I/O</a>
+                <a class="mdl-navigation__link mdl-color-text--grey-900" href="#iospeakers">Speakers</a>
                 <a class="mdl-navigation__link mdl-color-text--grey-900" href="#ioshedule">Schedule</a>
                 <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--colored"
-                   target="_blank" href="http://io.rsvp.lk/">Register Now</a>
+                   target="_blank" href="http://io.rsvp.lk/">Check Your Ticket</a>
             </nav>
         </div>
     </header>
@@ -50,21 +54,22 @@
         <span style="transform:translateX(-61px)" class="mdl-layout-title mdl-color-text--grey-900"></span>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link mdl-color-text--grey-900 drawer" href="#about">About I/O</a>
+            <a class="mdl-navigation__link mdl-color-text--grey-900 drawer" href="#iospeakers">Speakers</a>
             <a class="mdl-navigation__link mdl-color-text--grey-900 drawer" href="#ioshedule">Schedule</a>
             <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--colored"
-               target="_blank" href="http://rsvp.lk/gdgsrilanka/google-io-2017-sri-lanka">Register Now</a>
+               target="_blank" href="#ioshedule">Check Your Ticket</a>
         </nav>
     </div>
 
 
     <!--content start in here-->
     <main class="mdl-layout__content">
-        <div class="site-content">
+        <div id="wrapper" class="site-content">
             <div class="container">
                 <div class="mdl-grid" style="margin-top:4px;">
                     <div class="mdl-cell mdl-cell--8-col mdl-card welcome-card portfolio-card">
                         <countdown-timer style="margin-top:-60px;">
-                            <svg style="display:none" width="132px" height="132px" viewBox="0 0 132 132" version="1.1"
+                            <svg style="display:none" width="100%" height="132px" viewBox="0 0 132 132" version="1.1"
                                  class="style-scope countdown-timer">
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
                                    class="style-scope countdown-timer">
@@ -96,25 +101,27 @@
                         </countdown-timer>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <img src="img/cropeed.png" style="float:left;"/>
+                        <center>
+                            <img src="img/cropeed.png"/>
+                        </center>            
                     </div>
                 </div>
 
                 <section class="section--center mdl-grid site-max-width middles" style="margin-top:-80px; z-index:2000;position: relative;">
-                    <div class="mdl-cell mdl-cell--3-col middle" style="">
-                        <h5 class="powered" style="text-align: right; margin-top:0px;"><b>Powered by :</b></h5>
+                    <div class="mdl-cell mdl-cell--3-col middle">
+                        <h5 class="powered" style="text-align:center; margin-top:0px;"><b>Powered by :</b></h5>
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col middle" style="">
+                    <div class="mdl-cell mdl-cell--3-col middle">
                         <center>
                             <img src="img/dialog-logo.png" style="height:60px; margin-top:-32px;" />
                         </center>
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col middle" style="">
+                    <div class="mdl-cell mdl-cell--3-col middle">
                         <center>
                             <img src="img/IdeaMart.png" style="height:100px; margin-top:-34px; margin-left:-20px;" />
                         </center>
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col middle" style="">
+                    <div class="mdl-cell mdl-cell--3-col middle">
                         <center>
                             <img src="img/GDG-Logo.png" class="gdgl" style="height:30px;" />
                         </center>
@@ -122,43 +129,83 @@
 
                 </section>
 
-                <section class="section--center mdl-grid site-max-width" style="margin-top:-60px; z-index:2000;position: relative;">
+                <section class="bar section--center mdl-grid site-max-width" style="margin-top:-60px; z-index:2000;position: relative;">
                     <div class="mdl-cell mdl-cell--12-col" style="background-color: #30E7B6; height:3px;">
                     </div>
                 </section>
 
-                <section id="about" class="section--center mdl-grid site-max-width">
-                    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone  mdl-shadow--4dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">What is Google I/O?</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Google I/O is an annual developer festival held at the outdoor Shoreline Amphitheatre. I/O Extended events bring local developer communities together to experience the I/O keynote and sessions with one another in real-time, around the globe.
-                            They may also offer unique activities such as hackathons, codelabs, and demos.I/O is an outdoor developer festival
-                            With hands-on learning, technical talks, and Googlers on-hand to share their insights, Google I/O is returning for the second year at Shoreline Amphitheatre
-                        </div>
-                        <div class="mdl-card__actions  mdl-card--border">
-                            <a href="#"
-                               class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--colored">See more details</a>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--3-col">
+                 <section class="section--center mdl-grid site-max-width middles" style=" z-index:2000;position: relative;">
+                    <div class="mdl-cell mdl-cell--4-col middle">
                         <center>
-                            <img src="img/GDG-program-logo.png" class="developerlogo" style=" height:200px; margin-left:40px; margin-top:30px;"/>
+                            <img src="img/SLASSCOM-NEW.png" style="height:50px; margin-top:-12px;" />
+                            <p>Strategic Partner</p>
                         </center>
                     </div>
+                    <div class="mdl-cell mdl-cell--4-col middle">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--2-col-phone middle">
+                                <center>
+                                    <img src="img/tv.jpg" style="height:50px; margin-top:-22px; float:right;" />
+                                </center>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--2-col-phone middle">
+                                    <img src="img/fm.jpg" style="height:70px; margin-top:-32px; float:left;" />
+                            </div>
+                        </div>
+                        <center><p class="title" style="margin-top:-30px;">Media Partner</p></center>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col middle">
+                        <center>
+                            <img src="img/rsvp_logo.png" class="gdgl gdg2" style="height:35px;" />
+                            <p class="title1">Event Partner</p>
+                        </center>
+                    </div>
+
+                </section>
+
+                <section id="about" class="section--center mdl-grid site-max-width" style="margin-top:-20px !important;">
+                    <div class="linkboxes">
+                        <div class="linkboxes__content">
+                            <div class="linkboxes__title">
+                                What is Google I/O?
+                            </div>
+                            <div class="grid grid--padded">
+                                <div class="grid__item grid__item--12-cols grid__item--8-cols--gt-md">
+                                    <div class="grid grid--padded">
+                                        Google I/O is an annual developer festival held at the outdoor Shoreline Amphitheatre. To make this festival available to everyone, Google invites GDG's round the world to stream it to their local crowd as extended events. I/O Extended events bring local developer communities together to experience the I/O keynote and sessions with one another in real-time, around the globe.
+                            They may also offer unique activities such as hackathons, codelabs, and demos.I/O is an outdoor developer festival
+                            With hands-on learning, technical talks, and Googlers on-hand to share their insights, Google I/O is returning for the second year at Shoreline Amphitheatre
+                                    </div>
+                                    <div class="mdl-card__actions  mdl-card--border" style="margin-top:30px;">
+                                    <a href="https://events.google.com/io/"
+                                        class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--colored">See more details</a>
+                                    </div>
+                                </div>
+                                <div class="grid__item grid__item--4-cols--gt-sm grid__item--4-cols--gt-md">
+                                    <div class="linkboxes__animation">
+                                        <div class="slash-animation slash-animation--index" style="padding-top:100px;">
+                                             <center>
+                                                <img src="img/GDG-program-logo.png" class="developerlogo" style=" height:200px; margin-left:40px; margin-top:30px;"/>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </section>
 
                 <div class="belt belt--yellow belt--draggable">
                     <aside class="belt__callout">
-                        <div class="belt__callout__title" aria-level="2" role="heading">
-                            In 2016, 2000+ people were attended to I/O Extended 2016.
+                        <div class="belt__callout__title" aria-level="2" role="heading" style="font-size:25px;">
+                            In I/O Extended 2016 Sri Lanka, more than 2000 people gathered to experience the event
                         </div>
                         <div class="belt__callout__body">
-                            Many more of you joined us online. A big thank you - we hope to see you again this year.
+                            The developer community backed us a lot. A big thank you - we hope to see you again this year.
                         </div>
                         <div class="belt__callout__aside" style="text-align: center;padding-bottom:20px; margin-top:5px;">
-                            Drag photos to explore I/O Extended Sri Lanka 2016
+                            --Drag photos to explore I/O Extended Sri Lanka 2016--
                         </div>
                     </aside>
                     <div class="belt__draggable">
@@ -170,8 +217,6 @@
                             <img class="belt__image belt__image--flex" src="img/io_home_photo_4.jpg" alt="">
                             <img class="belt__image belt__image--flex" src="img/io_home_photo_5.jpg" alt="">
                             <img class="belt__image belt__image--flex" src="img/io_home_photo_6.jpg" alt="">
-                            <img class="belt__image belt__image--flex" src="img/Google I_O 2017_files/io_home_photo_7.jpg" alt="">
-                            <img class="belt__image belt__image--flex" src="img/Google I_O 2017_files/io_home_photo_8.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -180,7 +225,7 @@
                     <div class="linkboxes" style="padding:0 !important;">
                         <div class="linkboxes__content">
                             <div class="linkboxes__title">
-                                Explore themes
+                                Event Highlights
                             </div>
                             <div class="grid grid--padded">
                                 <div class="grid__item grid__item--12-cols grid__item--8-cols--gt-md">
@@ -194,8 +239,7 @@
                                                     </div>
                                                     <div class="linkboxes__box__title">Platforms</div>
                                                 </div>
-                                                <div class="linkboxes__box__body">The platforms that connect you to
-                                                    billions of users around the world.
+                                                <div class="linkboxes__box__body">Get to know world class sotfware platforms like Google Cloud
                                                 </div>
                                             </div>
                                         </div>
@@ -208,8 +252,7 @@
                                                     </div>
                                                     <div class="linkboxes__box__title">Building on Mobile</div>
                                                 </div>
-                                                <div class="linkboxes__box__body">Infrastructure and services to take
-                                                    your mobile apps to the next level.
+                                                <div class="linkboxes__box__body">Explore services like Firebase which enable you to build your apps faster and efficiently and make it scalable for thousands of users.
                                                 </div>
                                             </div>
                                         </div>
@@ -223,7 +266,7 @@
                                                     <div class="linkboxes__box__title">Grow &amp; Earn</div>
                                                 </div>
                                                 <div class="linkboxes__box__body">Acquire and engage new users; grow
-                                                    successful businesses.
+                                                    successful businesses. See how techniques like Adsense can help grow your business
                                                 </div>
                                             </div>
                                         </div>
@@ -234,10 +277,9 @@
                                                     <div class="linkboxes__box__image">
                                                         <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><ellipse fill="#FF984C" cx="20" cy="20" rx="20" ry="20"></ellipse><path d="M8 8h24v24H8z"></path><path d="M25 24l-4-4v-3.18c1.16-.42 2-1.52 2-2.82 0-1.66-1.34-3-3-3s-3 1.34-3 3c0 1.3.84 2.4 2 2.82V20l-4 4h-4v5h5v-3.05l4-4.2 4 4.2V29h5v-5h-4z" fill="#4A4A4A" fill-rule="nonzero"></path><path d="M8 8h24v24H8z"></path></g></svg>
                                                     </div>
-                                                    <div class="linkboxes__box__title">Beyond Mobile</div>
+                                                    <div class="linkboxes__box__title">Beyond Today</div>
                                                 </div>
-                                                <div class="linkboxes__box__body">Expand to new interfaces and push the
-                                                    limits of what’s possible.
+                                                <div class="linkboxes__box__body">Witness new technologies like Machine Learning and deep learning as well as AR technologies like Tango and Daydream
                                                 </div>
                                             </div>
                                         </div>
@@ -270,23 +312,64 @@
 
                 <div style="margin-top:70px; margin-bottom:60px;">
                     <center>
-                        <img id="imgPlay" src="img/sundar_key.jpg" style="height:560px;" data-video="https://www.youtube.com/embed/E_heSNIn8ik?autoplay=1"/>
+                        <img class="imgPlay" src="img/sundar_key.jpg" style="height:560px;" data-video="https://www.youtube.com/embed/videoseries?list=PLj05l3KM-fQ-p56SIKNWFZ47Yjts6t5J8"/>
                     </center>
                 </div>
+                <hr style="margin-top:0; z-index:2000; position: relative;"/>
+
+                <section id="iospeakers" class="section--center mdl-grid" style="margin-top:-50px !important;">
+                    <div class="linkboxes">
+                        <div class="linkboxes__content">
+                            <div class="linkboxes__title">
+                                Speakers in IO17
+                            </div>
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--6-col">
+                                    <center>
+                                        <img class="imgPlay2" src="img/covs.png" style="height:280px;" data-video="https://www.youtube.com/embed/gTkaU9IxGCs"/>
+                                        <p style="margin-top:5px;">Hasitha from CAKELABS</p>
+                                    </center>
+                                </div>
+                                <div class="mdl-cell mdl-cell--6-col">
+                                    <center>
+                                        <img class="imgPlay2" src="img/covs.png" style="height:280px;" data-video="https://www.youtube.com/embed/bSU4ZrTm3U0"/>
+                                        <p style="margin-top:5px;">Sameera Jayasoma, Software Architect from WSO2</p>
+                                    </center>
+                                </div>
+                            </div>
+
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--6-col">
+                                    <center>
+                                        <img class="imgPlay2" src="img/covs.png" style="height:280px;" data-video="https://www.youtube.com/embed/kH0oF6uyUik"/>
+                                        <p style="margin-top:5px;">Shevan from SLASSCOM</p>
+                                    </center>
+                                </div>
+                                <div class="mdl-cell mdl-cell--6-col">
+                                    <center>
+                                        <img class="imgPlay2" src="img/covs.png" style="height:280px;" data-video="https://www.youtube.com/embed/JcrhZBjCteQ"/>
+                                        <p style="margin-top:5px;">Dr. Sanjiva from WSO2</p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
                 <hr style="margin-top:0; z-index:2000; position: relative;"/>
 
                 <section id="ioshedule" class="section--center mdl-grid site-max-width homepage-portfolio" style="margin-top:0; z-index:4000; position: relative;">
                     <div class="linkboxes ">
                         <div class="linkboxes__content">
                             <div class="linkboxes__title">
-                                Shedule of I/O 17 Sri Lanka
+                                Schedule for I/O 17 Sri Lanka
                             </div>
                             <div class="grid grid--padded">
                                 <div class="grid__item grid__item--12-cols grid__item--8-cols--gt-md">
                                     <div class="grid grid--padded">
-                                        In a few weeks, we’ll start sharing sessions, time and location details, and provide the ability to create your own custom schedule. The schedule will be updated regularly until the event. Make sure to check back often, or sign up to receive notifications.
+                                        In a few weeks, we’ll start sharing details about sessions and other attractions at the extended event in Sri Lanka. 
                                     <br/>
-                                        You can collect your badge beginning May 16th between 7AM-7PM at Shoreline Amphitheatre. Keynote seating will be assigned on a first come, first served basis at badge pick-up.
+                                        You will be notified through our communication channels in Google+ as well as Facebook and twitter; when the registration is open.
                                     </div>
                                 </div>
                                 <div class="grid__item grid__item--4-cols--gt-sm grid__item--4-cols--gt-md">
@@ -325,224 +408,155 @@
                 </section>
 
                 <div class="schedule">
-                    <div class="schedule__timetable" aria-hidden="true">
-                        <div class="schedule__timetable__content schedule__timetable__content--spacer">
-                            <div class="schedule__timetable__times__wrapper">
-                                <div class="schedule__timetable__times">
-                                    <div class="schedule__timetable__times__side">
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">6</div>
-                                        <div class="schedule__timetable__times__time__sm">pm</div>            </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">7</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">8</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">9</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">10</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">11</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">12</div>
-                                        <div class="schedule__timetable__times__time__sm">am</div>            </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">1</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">2</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">3</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">4</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">5</div>
-                                    </div>
-                                    <div class="schedule__timetable__times__time">
-                                        <div class="schedule__timetable__times__time__time">6</div>
-                                        <div class="schedule__timetable__times__time__sm">am</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="schedule__agenda" aria-hidden="true">
+                    <center>
+                        <table class="mdl-data-table mdl-js-data-table" style="font-size:17px; margin-top:-10px;">
+                            <thead>
+                                <tr>
+                                <th class="mdl-data-table__cell--non-numeric">Time</th>
+                                <th class="mdl-data-table__cell--non-numeric">Session</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">5 PM - 6.45 PM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Registration (Developers / Enterprises)</td>
+                                </tr>
 
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">6.50 PM - 7 PM  </td>
+                                <td class="mdl-data-table__cell--non-numeric">Event Opening</td>
+                                </tr>
 
-                        <div class="schedule__agenda__day-mobile-bar">
-                            <div>
-                                Wed, May 17
-                            </div>
-                        </div>
-                        <div class="schedule__agenda__day">
-                            <div class="schedule__agenda__day-mobile-bar-lines">
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                                <div class="schedule__agenda__day-mobile-bar-lines__line"></div>
-                            </div>
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">7 PM - 7.15 PM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Keynote by Dialog and Google</td>
+                                </tr>
 
-                            <div class="schedule__agenda__content">
-                                <div class="schedule__agenda__day__side">
-                                    <span>Wed, May 17</span>
-                                </div>
-                                <div class="schedule__agenda__day__bars">
-                                    <div class="schedule__agenda__day__bars__row ">
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--start" style="flex: 0.5"></div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--event schedule__agenda__day__bars__bar--yellow" style="flex: 2.0">
-                                            <div class="schedule__agenda__day__bars__bar__pad">
-                                                <div class="schedule__agenda__day__bars__bar__icon"><svg width="17" height="18" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg"><path d="M7.2 6.3H5.4V0H3.6v6.3H1.8V0H0v6.3c0 1.908 1.494 3.456 3.375 3.573V18h2.25V9.873C7.506 9.756 9 8.208 9 6.3V0H7.2v6.3zm4.5-2.7v7.2h2.25V18h2.25V0c-2.484 0-4.5 2.016-4.5 3.6z" fill="#4A4A4A" fill-rule="evenodd"></path></svg></div>
-                                                Breakfast
-                                            </div>
-                                        </div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--end" style="flex: 12.5"></div>
-                                    </div>
-                                    <div class="schedule__agenda__day__bars__row ">
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--event schedule__agenda__day__bars__bar--" style="flex: 12">
-                                            <div class="schedule__agenda__day__bars__bar__pad">
-                                                <div class="schedule__agenda__day__bars__bar__icon"><svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-2 0h20v20H-2z"></path><path d="M8 .833L.5 4.167v5c0 4.625 3.2 8.95 7.5 10 4.3-1.05 7.5-5.375 7.5-10v-5L8 .833zM6.333 14.167L3 10.833l1.175-1.175 2.158 2.15 5.492-5.491L13 7.5l-6.667 6.667z" fill="#4A4A4A"></path></g></svg></div>
-                                                Badge pick-up
-                                            </div>
-                                        </div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--end" style="flex: 3"></div>
-                                    </div>
-                                    <div class="schedule__agenda__day__bars__row ">
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--start" style="flex: 3"></div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--event schedule__agenda__day__bars__bar--teal" style="flex: 2">
-                                            <div class="schedule__agenda__day__bars__bar__pad">
-                                                <div class="schedule__agenda__day__bars__bar__icon"><svg width="19" height="18" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#27E4FD" d="M-47-17h175v52.5H-47z"></path><path d="M-3-3h24v24H-3z"></path><path fill="#4A4A4A" d="M9.391 13.774L15.198 18l-2.222-6.824 5.807-4.133H11.66L9.39 0 7.12 7.043H0l5.807 4.133L3.584 18z"></path></g></svg></div>
-                                                Keynote
-                                            </div>
-                                        </div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--end" style="flex: 10"></div>
-                                    </div>
-                                    <div class="schedule__agenda__day__bars__row ">
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--start" style="flex: 4.5"></div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--event schedule__agenda__day__bars__bar--yellow" style="flex: 3.0">
-                                            <div class="schedule__agenda__day__bars__bar__pad">
-                                                <div class="schedule__agenda__day__bars__bar__icon"><svg width="17" height="18" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg"><path d="M7.2 6.3H5.4V0H3.6v6.3H1.8V0H0v6.3c0 1.908 1.494 3.456 3.375 3.573V18h2.25V9.873C7.506 9.756 9 8.208 9 6.3V0H7.2v6.3zm4.5-2.7v7.2h2.25V18h2.25V0c-2.484 0-4.5 2.016-4.5 3.6z" fill="#4A4A4A" fill-rule="evenodd"></path></svg></div>
-                                                Lunch
-                                            </div>
-                                        </div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--end" style="flex: 7.5"></div>
-                                    </div>
-                                    <div class="schedule__agenda__day__bars__row ">
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--start" style="flex: 5.5"></div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--event schedule__agenda__day__bars__bar--teal" style="flex: 5.5">
-                                            <div class="schedule__agenda__day__bars__bar__pad">
-                                                <div class="schedule__agenda__day__bars__bar__icon"><svg width="18" height="11" viewBox="0 0 18 11" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#27E4FD" d="M-159-20h400v52h-400z"></path><path d="M-3-6h24v24H-3z"></path><path d="M11.34 9.717L15.48 5.5l-4.14-4.217L12.6 0 18 5.5 12.6 11l-1.26-1.283zm-4.68 0L2.52 5.5l4.14-4.217L5.4 0 0 5.5 5.4 11l1.26-1.283z" fill="#4A4A4A"></path></g></svg></div>
-                                                Codelabs
-                                            </div>
-                                        </div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--end" style="flex: 4"></div>
-                                    </div>
-                                    <div class="schedule__agenda__day__bars__row ">
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--start" style="flex: 5.5"></div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--event schedule__agenda__day__bars__bar--teal" style="flex: 5.5">
-                                            <div class="schedule__agenda__day__bars__bar__pad">
-                                                <div class="schedule__agenda__day__bars__bar__icon"><svg width="17" height="18" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#27E4FD" d="M-158-18h400v54h-400z"></path><path d="M-3-3h24v24H-3z"></path><path d="M2.801.521l2.563 2.626c.294.302-.017.782-.312 1.084L3.926 5.385c-.295.302-.578.431-.873.13L.503 2.9C-.413 4.803-.08 7.246 1.525 8.89c1.45 1.486 3.26 2.187 5.452 1.118l6.774 6.942c.442.453 1.128.888 1.57.435l1.442-1.48c.442-.452.203-1.343-.24-1.796L9.75 7.167c.58-1.773.365-4.107-1.085-5.593C7.047-.083 4.647-.428 2.8.521" fill="#4A4A4A"></path></g></svg></div>
-                                                Sandbox
-                                            </div>
-                                        </div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--end" style="flex: 4"></div>
-                                    </div>
-                                    <div class="schedule__agenda__day__bars__row ">
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--start" style="flex: 6"></div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--event schedule__agenda__day__bars__bar--teal" style="flex: 6">
-                                            <div class="schedule__agenda__day__bars__bar__pad">
-                                                <div class="schedule__agenda__day__bars__bar__icon"><svg width="14" height="20" viewBox="0 0 14 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#27E4FD" d="M-160-16h400v51.5h-400z"></path><path fill="#4A4A4A" d="M11.634-.026l1.732 1-11 19.052-1.732-1z"></path><path d="M-5-2h24v24H-5z"></path></g></svg></div>
-                                                Sessions
-                                            </div>
-                                        </div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--end" style="flex: 3"></div>
-                                    </div>
-                                    <div class="schedule__agenda__day__bars__row ">
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--start" style="flex: 12"></div>
-                                        <div class="schedule__agenda__day__bars__bar schedule__agenda__day__bars__bar--event schedule__agenda__day__bars__bar--purple-alt" style="flex: 3">
-                                            <div class="schedule__agenda__day__bars__bar__pad">
-                                                <div class="schedule__agenda__day__bars__bar__icon"><svg width="12" height="18" viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg"><path d="M6 0v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V4h4V0H6z" fill="#4A4A4A" fill-rule="evenodd"></path></svg></div>
-                                                After Hours Party
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="schedule__agenda__day-mobile-bar-times">
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                                7
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                                9
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                                11
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                                1
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                                3
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                                5
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                                7
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                            </div>
-                            <div class="schedule__agenda__day-mobile-bar-times__time">
-                                9
-                            </div>
-                        </div>
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">7.15 PM - 7.45 PM</td>
+                                <td class="mdl-data-table__cell--non-numeric">GDG Sri Lanka, Google and you</td>
+                                </tr>
 
-                    </div>
-                    <div class="a11y__invisible">
-                        <h2>Agenda</h2>
-                        <h3>Wed, May 17</h3>
-                        <p>Breakfast <time datetime="2017-05-17T07:30">7:30 AM</time> to <time datetime="2017-05-17T09:30">9:30 AM</time></p>
-                        <p>Badge pick-up <time datetime="2017-05-17T07:00">7:00 AM</time> to <time datetime="2017-05-17T19:00">7:00 PM</time></p>
-                        <p>Keynote <time datetime="2017-05-17T10:00">10:00 AM</time> to <time datetime="2017-05-17T12:00">12:00 PM</time></p>
-                        <p>Lunch <time datetime="2017-05-17T11:30">11:30 AM</time> to <time datetime="2017-05-17T14:30">2:30 PM</time></p>
-                        <p>Codelabs <time datetime="2017-05-17T12:30">12:30 PM</time> to <time datetime="2017-05-17T18:00">6:00 PM</time></p>
-                        <p>Sandbox <time datetime="2017-05-17T12:30">12:30 PM</time> to <time datetime="2017-05-17T18:00">6:00 PM</time></p>
-                        <p>Sessions <time datetime="2017-05-17T13:00">1:00 PM</time> to <time datetime="2017-05-17T19:00">7:00 PM</time></p>
-                        <p>After Hours Party <time datetime="2017-05-17T19:00">7:00 PM</time> to <time datetime="2017-05-17T22:00">10:00 PM</time></p>
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">7.45 PM - 8.25 PM</td>
+                                <td class="mdl-data-table__cell--non-numeric">Ballerina by WSO2</td>
+                                </tr>
 
-                    </div>
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">8.25 PM - 8.30 PM 	</td>
+                                <td class="mdl-data-table__cell--non-numeric">Enternainment Segment</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">8.30 PM - 8.45 PM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Dinner starts</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">8.45 PM - 9.15 PM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Tech Session</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">9.15 PM - 9.45 PM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Dialog IoT </td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">9.50 PM - 9.55 PM  </td>
+                                <td class="mdl-data-table__cell--non-numeric">Entertainment Session</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">10 PM - Midnight</td>
+                                <td class="mdl-data-table__cell--non-numeric">Livestream - Google IO keynote</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">12.00 AM - 12.15 AM  </td>
+                                <td class="mdl-data-table__cell--non-numeric">Entertainment Segment and Prize Giving of Bot Challenge Winners</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">12.15 AM - 12.45 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Google Cloud Platform</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">12.45 AM - 1.15 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">ideamart Gone Global</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">1.15 AM - 1.45 AM</td>
+                                <td class="mdl-data-table__cell--non-numeric">	Arimac Story</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">1.45 AM - 2 AM  </td>
+                                <td class="mdl-data-table__cell--non-numeric">Entertainment Segment</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">2 AM - 2.20 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Product Launches </td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">2.20 AM - 2.50 AM</td>
+                                <td class="mdl-data-table__cell--non-numeric">Cake Labs Presentation </td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">2.50 AM - 3.10 AM</td>
+                                <td class="mdl-data-table__cell--non-numeric">SLASSCOM Speech</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">3.10 AM Onwards </td>
+                                <td class="mdl-data-table__cell--non-numeric">Snacks will be served</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">3.10 AM - 3.30 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">GBG Speech </td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">3.30 AM - 3.45 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Entertainment Segment</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">3.45 AM - 4.10 AM  </td>
+                                <td class="mdl-data-table__cell--non-numeric">Speech by Bhasha</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">4.10 AM - 4.30 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Speech by HypeHash</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">4.30 AM - 5 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Tech session</td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">5.00 AM - 5.05 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Vote of Thanks </td>
+                                </tr>
+
+                                <tr>
+                                <td class="mdl-data-table__cell--non-numeric">5.05 AM </td>
+                                <td class="mdl-data-table__cell--non-numeric">Group Photograph</td>
+                                </tr>
+
+                        
+                            
+                            </tbody>
+                        </table>
+                    </center>
                 </div>
 
                 <center>
@@ -588,8 +602,13 @@
             })
         });
 
-        $('#imgPlay').click(function(){
+        $('.imgPlay').click(function(){
             video = '<center><iframe src="'+ $(this).attr('data-video') +'" style="width:80%;height:450px; margin-top:50px;"></iframe></center>';
+            $(this).replaceWith(video);
+        });
+
+        $('.imgPlay2').click(function(){
+            video = '<center><iframe src="'+ $(this).attr('data-video') +'" style="width:100%;height:280px;"></iframe></center>';
             $(this).replaceWith(video);
         });
 
@@ -603,6 +622,17 @@
     <script src="scripts/slash.js"></script>
     <script src="scripts/countdown.js"></script>
     <script src="scripts/main.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','httptarget="_blank" href="#ioshedule">Register Now</a>s://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75655731-6', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </div>
 </body>
 </html>
