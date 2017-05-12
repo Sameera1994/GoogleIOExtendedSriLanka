@@ -5,6 +5,10 @@ body{
 img {
   max-width: 100%;
 }
+mark {
+  background-color: 	#7CFC00;
+  color: black;
+}
 
 .site-header {
   position: relative;
